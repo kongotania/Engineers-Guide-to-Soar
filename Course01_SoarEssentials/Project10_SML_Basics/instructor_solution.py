@@ -2,7 +2,7 @@
 It sets up a Soar agent, loads a Soar file, runs the agent, and reads agent output.
 """
 import sys, pathlib; sys.path.append(str(pathlib.Path(__file__).parent.parent.parent.resolve()))
-import suppliersort_course.run_soar          # Importing this script sets up the env variables needed for us to import Python_sml_ClientInterface.
+import Course01_SoarEssentials.run_soar          # Importing this script sets up the env variables needed for us to import Python_sml_ClientInterface.
 
 # Define the path for our Supplier Sorting Soar agent rules (in an OS-independent way).
 AGENT_PATH = str(pathlib.Path(__file__).parent.joinpath("agent_code", "_firstload_suppliersort.soar").resolve())
